@@ -88,7 +88,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <p>礼拜一，我顶着张死人脸挪进教室。脚后跟还没落地，班主任老徐——那张脸垂得能犁地——就像堵死人的墙，杵在门口，活脱脱个等着判刑的刽子手。她把我喊到班门口，那双三角眼儿，像毒蛇的信子一样狠狠舔过来。她张嘴的第一句话，像三九天里锻了冰棱的刀子，精准无情地捅进我心口最烂的那块：</p>
 <p>“哟，你爸死了，你倒挺高兴啊？”</p>
 <p>轰隆一声！</p>
-<p>嗓子眼里像猛地塞进一把生锈还带倒刺的钉子。想吼？想骂？喉咙里只剩下断断续续的抽气声，半个字都挤不出来。谁告诉她的？还能是谁！校长呗！这破学校，跟四面漏风的烂炕洞似的，藏不住一点温度！校长正是我爸“最铁的哥们”老马的老婆！老徐这条走狗，就是替她主子送话的——你爸没了，你们家，连根草都不算！</p>
+<p>嗓子眼里像猛地塞进一把生锈还带倒刺的钉子。想吼？想骂？喉咙里只剩下断断续续的抽气声，半个字都挤不出来。谁告诉她的？还能是谁！校长呗！这破学校，跟四面漏风的烂炕洞似的，藏不住一点温度！校长正是我爸“最铁的哥们”老马的老婆！那一刻我突然明白，学校这个地方，看似讲道理，其实也有自己的风向。</p>
 <p>这所谓“铁哥们”！我想起爸为姓马的那些破事急得嘴皮起泡，想起马家几回装修，我爸屁颠屁颠地出人出料当孙子，逢年过节哪回不是提着祭品去拜那座庙？人一走，茶凉得能冻掉牙！这哪是茶凉？是人心淬了毒，冷得彻骨。</p>
 <p>从那天起，我更蔫了。原本就怂，这下连眼神都钝了，像蒙了一层擦不掉的灰。不是瞬间崩塌的灾难，而是日复一日、无声无息的钝刀割肉，鲜血一点点地渗出，染透骨髓。我看透了，这世道里，最扎心的冷不是数九寒天的冰，是人情冷暖，冰溜子都没它狠。最毒的也不是砒霜鹤顶红，而是那些披着“教育”外衣的伪君子，踩着光鲜皮鞋，把你那点可怜的自尊心踩成碎片，碾得稀巴烂。</p>
 <p>从那天起，我彻底蔫了。原本就像条过街老鼠，这下连魂儿都被掏走了半截。眼神蒙了层永远擦不掉的灰，看啥都隔着层雾。不是轰然倒塌的天塌地陷，而是锈迹斑斑的钝刀子，一下又一下，缓缓地剌进肉里。血珠不喷涌，只是默默无声、黏糊糊地往下渗，渗进骨缝里，冻成冰碴。忍耐这颗种子，就这样被埋进这冷冰冰、黏糊糊的血泥，带着铁锈和倒刺的味道。</p></div>
@@ -111,7 +111,7 @@ if(""!=""){
     var startSite=new Date("");
     var diff=now.getTime()-startSite.getTime();
     var diffDay=Math.floor(diff/(1000*60*60*24));
-    document.getElementById("runday").innerHTML="网站运行"+diffDay+"天"+" • ";
+    document.getElementById("runday").innerHTML="网站运行 "+diffDay+" 天"+" • ";
 }
 </script></div>
 </body>
@@ -156,6 +156,7 @@ document.getElementById("pathIssue").setAttribute("d",IconList["github"]);
 function openComments(){
     cm=document.getElementById("comments");
     cmButton=document.getElementById("cmButton");
+    cmButton.disabled=true;
     cmButton.innerHTML="loading";
     span=document.createElement("span");
     span.setAttribute("class","AnimatedEllipsis");
